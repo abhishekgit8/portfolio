@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Abhishek's Portfolio</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="web development, particles, portfolio, Abhishek">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <!-- home
+    ================================================== -->
+    <main class="s-home s-home--particles">
+
+        <div id="particles-js" class="home-particles"></div>
+        
+        <div class="gradient-overlay"></div>
+
+        <div class="home-content">
+
+            <!-- <div class="home-logo">
+                <a href="index-particles.html">
+                    <img src="images/logo.svg" alt="Homepage">
+                </a>
+            </div> -->
+
+            <div class="row home-content__main">
+
+                <div class="col-eight home-content__text pull-right">
+                    <h3>Hello</h3>
+
+                    <h1>
+                        Hi, I'm <span style="color: #a1047a;">Abhishek</span><br>
+                        and I'm currently working on a<br>
+                        super awesome website.
+                      </h1>
+                      
+
+                    <p>
+                    Aspiring Cybersecurity Enthusiast | Web Developer.<br>
+                    Passionate about building smart, secure, and scalable web experiences.<br>
+                    I love to learn and explore new technologies and frameworks.<br> 
+                    </p>
+
+                    <div class="home-content__subscribe">
+                        <!-- <form id="mc-form" class="group" novalidate="true">
+                            <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
+                            <input type="submit" name="subscribe" value="Notify Me">
+                            <label for="mc-email" class="subscribe-message"></label>
+                        </form> -->
+
+                        <!-- <form id="mc-form" class="group" action="https://formspree.io/" method="POST">
+                            <input type="email" name="email" class="email" id="mc-email" placeholder="Email Address" required>
+                            <input type="submit" name="subscribe" value="Notify Me">
+                            <label for="mc-email" class="subscribe-message"></label>
+                        </form> -->
+                        <form
+                            action="https://formspree.io/f/mgvkedob"
+                            method="POST"
+                            onsubmit="event.preventDefault(); handleFormSubmit(this);"
+                        >
+                            <label>
+                                Your email:
+                                <input type="email" name="email" placeholder="Email Address" required style="color: white; width: 300px;">
+                            </label>
+                            <button type="submit">Send</button>
+                        </form>
+
+                        <div id="snackbar" style="
+                            visibility: hidden;
+                            min-width: 250px;
+                            margin-left: -125px;
+                            background-color: #4b924e;
+                            color: #fff;
+                            text-align: center;
+                            border-radius: 2px;
+                            padding: 16px;
+                            position: fixed;
+                            z-index: 1;
+                            left: 50%;
+                            bottom: 30px;
+                            font-size: 17px;
+                        ">
+                            Email sent successfully!
+                        </div>
+
+                        <script>
+                            function handleFormSubmit(form) {
+                                const formData = new FormData(form);
+                                fetch(form.action, {
+                                    method: form.method,
+                                    body: formData,
+                                    headers: {
+                                        'Accept': 'application/json'
+                                    }
+                                })
+                                    .then(response => {
+                                        if (response.ok) {
+                                            showSnackbar('Email sent successfully!');
+                                            form.reset();
+                                        } else {
+                                            showSnackbar('Failed to send email. Please try again.');
+                                        }
+                                    })
+                                    .catch(error => {
+                                        showSnackbar('An error occurred. Please try again.');
+                                    });
+                            }
+
+                            function showSnackbar(message) {
+                                const snackbar = document.getElementById('snackbar');
+                                snackbar.textContent = message;
+                                snackbar.style.visibility = 'visible';
+                                setTimeout(() => {
+                                    snackbar.style.visibility = 'hidden';
+                                }, 3000);
+                            }
+                        </script>
+
+                        
+                    </div>
+                </div>  <!-- end home-content__text -->
+
+                <!-- <div class="col-four home-content__counter">
+                    <h3>Launching In</h3>
+
+                    <div class="home-content__clock">
+                        <div class="top">
+                            <div class="time days">
+                                325
+                                <span>Days</span>
+                            </div>
+                        </div>    
+                        <div class="time hours">
+                            09
+                            <span>H</span>
+                        </div>
+                        <div class="time minutes">
+                            54
+                            <span>M</span>
+                        </div>
+                        <div class="time seconds">
+                            30
+                            <span>S</span>
+                        </div>
+                    </div>  
+                </div>   -->
+
+                <div class="col-four home-content__image">
+                    <img src="images/303 (1).jpg" alt="Sample Image" style="max-width: 100%; height: auto; border-radius: 50%;">
+                </div>
+
+            </div>  <!-- end home-content__main -->
+
+            <ul class="home-social">
+                <!-- <li>
+                <a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
+                </li> -->
+                <!-- <li>
+                <a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+                </li> -->
+                <li>
+                    <a href="https://www.linkedin.com/in/abhishek-p-v-7483b0212" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span>
+                    </a>
+                </li>
+                
+                <li>
+                <a href="https://www.instagram.com/abhish_kh_?igsh=MTFkYXJpOHV5bXcxYQ==" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span>
+                </a>
+                </li>
+                <li>
+                    <a href="https://github.com/abhishekgit8" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github" aria-hidden="true"></i><span>GitHub</span>
+                    </a>
+                </li>
+                <!-- <li>
+                <a href="#0"><i class="fab fa-behance" aria-hidden="true"></i><span>Behance</span></a>
+                </li> -->
+                <!-- <li>
+                <a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a>
+                </li> -->
+            </ul> <!-- end home-social -->
+
+            <div class="row home-copyright">
+                <!-- <span>Copyright Count 2018</span>  -->
+                <!-- <span>Design by <a href="https://www.styleshout.com/">styleshout</a></span> -->
+            </div> <!-- end home-copyright -->
+
+
+            <div class="home-content__line"></div>
+
+        </div> <!-- end home-content -->
+
+    </main> <!-- end s-home -->
+
+
+    <!-- info
+    ================================================== -->
+    <a class="info-toggle" href="#0">
+        <span class="info-menu-icon"></span>
+    </a>
+
+    <div class="s-info">
+
+        <div class="row info-wrapper">
+
+            <div class="col-seven tab-full info-main">
+                <h1>Skills & Tools</h1>
+                <p>
+                    <span>🧠 Python & Machine Learning</span><br>
+                    <span>🌐 React, Next.js</span><br>
+                    <!-- <span>🛡️ GRC & Risk Assessment</span><br> -->
+                    <!-- <span>💻 Flask & APIs</span><br> -->
+                    <span>🧪 Vulnerability Scanning</span><br>
+                    <!-- <span>🔍 Threat Intelligence</span><br> -->
+                    <span>📈 Git, Linux, Windows</span><br>
+                    <span>🎯 HTML, CSS, JavaScript, Typescript</span><br>
+                </p>
+
+                <p>
+                    I'm still in the early stages of my journey as a developer and cybersecurity enthusiast ,
+                    learning every day, one bug and breakthrough at a time. While I may not know everything yet,
+                    I'm deeply curious about how things work behind the screen. From understanding the art of 
+                    penetration testing to exploring the power of machine learning and computer vision, I'm 
+                    building my skills with patience, passion, and persistence. The world of tech is vast 
+                    and I'm excited to grow into it.
+
+                </p>
+            </div>
+
+            <div class="col-four tab-full pull-right info-contact">
+
+                <div class="info-block">
+                    <h3>Start A Conversation</h3>
+                    <p>
+                        <a href="mailto:#0" class="info-email">abhishekpv1972@gmail.com</a><br>
+                        <a href="tel:+18587338912" class="'info-phone">+91 9207475012</a>
+                    </p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Location</h3>
+                    
+                    <p class="info-address">
+                        Kochi, Kerala<br>
+                        India
+                    </p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Find Me On</h3>
+                    
+                    <ul class="info-social">
+                        <!-- <li>
+                            <a href="#0"><i class="fab fa-facebook" aria-hidden="true"></i>
+                            <span>Facebook</span></a>
+                        </li> -->
+                        <!-- <li>
+                            <a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i>
+                            <span>Twiiter</span></a>
+                        </li> -->
+                        <li>
+                            <a href="https://www.linkedin.com/in/abhishek-p-v-7483b0212" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://www.instagram.com/abhish_kh_?igsh=MTFkYXJpOHV5bXcxYQ==" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://github.com/abhishekgit8" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github" aria-hidden="true"></i><span>GitHub</span>
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="#0"><i class="fab fa-behance" aria-hidden="true"></i>
+                            <span>Behance</span></a>
+                        </li> -->
+                        <!-- <li>
+                            <a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i>
+                            <span>Dribbble</span></a>
+                        </li> -->
+                    </ul>
+                </div>
+                
+            </div>  <!-- end info contact -->
+
+        </div>  <!-- end info wrapper -->
+
+    </div> <!-- end s-info -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/polygons.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
